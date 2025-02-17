@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: linear-gradient(135deg, #ffe6f0, #ffc3a0); /* Soft pastel pink */
+            color: #5a3e36; /* Soft brown for vintage feel */
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Main Container */
+        .content {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+            max-width: 600px;
+            text-align: center;
+            border: 3px solid #ffb6c1; /* Light pink lace border */
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Top Ribbon */
+        .ribbon {
+            position: absolute;
+            width: 100%;
+            height: 40px;
+            background: url('https://i.imgur.com/V9Z7Fzq.png') repeat-x;
+            top: -10px;
+            left: 0;
+        }
+
+        /* Headings */
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8em;
+            color: #d41a5a; /* Romantic deep pink */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #ff69b4; /* Soft pink */
+            transition: color 0.3s ease-in-out;
+        }
+
+        h2:hover {
+            color: #d41a5a;
+        }
+
+        /* Paragraphs and Lists */
+        p, ul {
+            font-size: 1.2em;
+            font-weight: 300;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        ul {
+            list-style-type: "💗";
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        ul li:hover {
+            transform: translateX(10px);
+            color: #ff69b4;
+        }
+
+        /* Image Styling with Bow */
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+            border: 5px solid #ff69b4;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Bow on Image */
+        .bow {
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 60px;
+            background: url('https://i.imgur.com/Qg8BoJw.png') no-repeat center/contain;
+        }
+
+        /* Button Styling */
+        .btn {
+            display: inline-block;
+            background: #ff69b4;
+            color: white;
+            font-size: 1.2em;
+            padding: 12px 25px;
+            margin-top: 15px;
+            text-decoration: none;
+            border-radius: 25px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+
+        .btn:hover {
+            background: #d41a5a;
+            transform: scale(1.05);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="ribbon"></div> <!-- Top Ribbon -->
+        
+        <h1>About Me</h1>
+        <h2 class="name">Zarah Bacani Godio</h2>
+
+        <div class="image-container">
+            <img src="image.jpg" alt="Zarah Bacani Godio" width="200" height="200">
+            <div class="bow"></div> <!-- Bow on Image -->
+        </div>
+
+        <p>Hello! My name is Zarah Bacani Godio. I'm from Baguio City, Philippines. I am currently pursuing a career in Information Technology with a major in ERP. Here are some things about me:</p>
+
+        <h2>Age</h2>
+        <p>I am 20 years old.</p>
+
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Watching Korean dramas and taking care of my niece in my free time.</li>
+            <li>Trying new things and hobbies, conquering my fears, and being adventurous.</li>
+            <li>Exploring; I love both mountains and beaches, as well as sunsets and sunrises.</li>
+        </ul>
+
+        <h2>Interests</h2>
+        <p>One interesting thing about me is that I can enjoy both being alone and being in the company of others. As I get older, I don’t want to waste my 20s being stuck at home. I want to live my life with no regrets.</p>
+
+        <a href="#" class="btn">Contact Me</a>
+    </div>
+</body>
+</html>
+
